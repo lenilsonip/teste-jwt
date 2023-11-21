@@ -1,4 +1,4 @@
-package com.br.exemplo.jwt.testejwt;
+package com.br.exemplo.jwt.testejwt.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,6 +9,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.br.exemplo.jwt.testejwt.dto.JwtRequest;
+import com.br.exemplo.jwt.testejwt.dto.JwtResponse;
+import com.br.exemplo.jwt.testejwt.service.UserDetailsServiceImpl;
+import com.br.exemplo.jwt.testejwt.util.JwtTokenUtil;
 
 @RestController
 public class AuthenticationController {

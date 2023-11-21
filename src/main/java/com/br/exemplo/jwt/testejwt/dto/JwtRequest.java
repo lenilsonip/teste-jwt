@@ -1,33 +1,13 @@
-package com.br.exemplo.jwt.testejwt;
+package com.br.exemplo.jwt.testejwt.dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import java.io.Serializable;
 
-@Entity
-public class User {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+public class JwtRequest implements Serializable {
+
+	private static final long serialVersionUID = 5926468583005150707L;
 
 	private String username;
 	private String password;
-
-	/**
-	 * @return the id
-	 */
-	public final Long getId() {
-		return id;
-	}
-
-	/**
-	 * @param id the id to set
-	 */
-	public final void setId(Long id) {
-		this.id = id;
-	}
 
 	/**
 	 * @return the username

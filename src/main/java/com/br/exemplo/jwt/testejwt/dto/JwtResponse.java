@@ -1,4 +1,4 @@
-package com.br.exemplo.jwt.testejwt;
+package com.br.exemplo.jwt.testejwt.dto;
 
 import java.io.Serializable;
 

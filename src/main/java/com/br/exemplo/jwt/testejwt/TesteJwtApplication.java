@@ -6,6 +6,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import com.br.exemplo.jwt.testejwt.entity.User;
+import com.br.exemplo.jwt.testejwt.repository.UserRepository;
+
 @SpringBootApplication
 public class TesteJwtApplication implements CommandLineRunner {
 

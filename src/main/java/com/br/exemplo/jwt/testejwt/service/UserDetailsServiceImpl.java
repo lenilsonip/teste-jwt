@@ -1,4 +1,4 @@
-package com.br.exemplo.jwt.testejwt;
+package com.br.exemplo.jwt.testejwt.service;
 
 import java.util.ArrayList;
 
@@ -7,6 +7,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import com.br.exemplo.jwt.testejwt.entity.User;
+import com.br.exemplo.jwt.testejwt.repository.UserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

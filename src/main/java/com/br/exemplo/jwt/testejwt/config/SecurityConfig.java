@@ -1,4 +1,4 @@
-package com.br.exemplo.jwt.testejwt;
+package com.br.exemplo.jwt.testejwt.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -12,6 +12,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.br.exemplo.jwt.testejwt.filter.JwtRequestFilter;
+import com.br.exemplo.jwt.testejwt.service.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity
