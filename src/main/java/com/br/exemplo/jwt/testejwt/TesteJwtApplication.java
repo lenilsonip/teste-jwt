@@ -32,7 +32,6 @@ public class TesteJwtApplication implements CommandLineRunner {
         if (!userRepository.findByUsername(username).isPresent()) {
             User user = new User();
             user.setUsername(username);
-            // Use o codificador de senha para armazenar a senha de forma segura no banco de dados
             user.setPassword(passwordEncoder.encode(password));
             userRepository.save(user);
         }
